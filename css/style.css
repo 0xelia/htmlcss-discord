@@ -17,8 +17,56 @@ a {
 /* debug*/
 
 .debug * {
-    border: solid red 3px;
+    border: solid #d46bea 3px;
     padding: 15px;
 }
 
 /* style */
+
+/* header style */
+#main-header {
+    border: solid salmon 3px;
+}
+
+.navbar {
+    max-width: 700px;
+    margin: 0px auto;
+    border: solid skyblue 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0px auto;
+    min-height: 400px;
+    border: solid skyblue 3px;
+}
+
+[class^="nav"] {
+    border: lightseagreen solid 3px;
+    background-color: slateblue;
+    color: white;
+}
+
+.navbar:nth-child(odd) {
+    flex-basis: 25%;
+}
+
+.nav-menu {
+    flex-basis: 50%;
+}
+
+/* main style */
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img {
+    min-height: 200px;
+    border: solid yellow 3px;
+    flex-basis: 80%;
+}
