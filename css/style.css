@@ -16,7 +16,19 @@ a {
 
 /* debug*/
 
+.debug #main-header {
+    border: solid salmon 3px;
+}
 
+.debug [class^="nav"] {
+    border: lightseagreen solid 3px;
+    background-color: slateblue;
+    color: white;
+}
+
+.debug .navbar {
+    border: solid cyan 3px;
+}
 
 .debug .hero {
     border: solid yellow 3px;
@@ -28,6 +40,12 @@ a {
     border: solid red 3px;
     /* padding: 10px; */
 }
+
+.debug .container {
+    min-height: 400px;
+    border: solid skyblue 3px;
+}
+
 .debug [class^="col"] {
     border: solid blueviolet;
     height: 400px;
@@ -56,31 +74,51 @@ a {
 /* style */
 
 /* header style */
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
 #main-header {
-    border: solid salmon 3px;
+    background-color:  #255ee8;
+    font-weight: 300;
+    color: white;
+    padding: 20px 0;
+}
+
+.button {
+    padding: 11px 14px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-align: center;
 }
 
 .navbar {
     max-width: 1200px;
     margin: 0px auto;
-    border: solid skyblue 3px;
-    
 }
 
 .row {
     display: flex;
+    align-items: center;
 }
 
-[class^="nav"] {
-    border: lightseagreen solid 3px;
-    background-color: slateblue;
-    color: white;
-}
 
+.nav-menu .row {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
 
 .nav-menu {
     flex-grow: 1;
+    align-items: center;
+}
+
+.nav-callToAction {
+    background-color: white;
+    color: black;
 }
 
 /* main style */
@@ -92,21 +130,59 @@ a {
 .container {
     max-width: 1200px;
     margin: 0px auto;
-    min-height: 400px;
-    border: solid skyblue 3px;
     
 }
 
+/* Hero */
+
+.heroSection{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+}
 
 .hero {   
     width: 900px;
     margin: 0 auto;
+    color: white;
+}
+
+.title {
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titleDescription {
+    text-align: center;
+    font-size: ;
 }
 
 .heroContainer {
-    padding: 30px 0;
+    padding: 93px 0 148px;
 }
 
+
+.buttonMac::before{
+    content: '\2193';
+    color: black;
+    margin-right: 5px;
+}
+
+.buttonMac {
+    background-color: white;
+    color: black;
+    margin-right: 10px;
+}
+
+.buttonBrowser {
+    color: white;
+    background-color: black;
+}
+
+.buttons {
+    text-align: center;
+    padding-top: 70px;
+}
 
 
 .col60 {
@@ -148,7 +224,10 @@ a {
 }
 
 .footerContainer {
-    padding: 5px 0 15px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .footerIcons {
@@ -157,5 +236,7 @@ a {
 
 .containerIcons {
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
 }
