@@ -16,9 +16,41 @@ a {
 
 /* debug*/
 
-.debug * {
-    border: solid #d46bea 3px;
-    padding: 15px;
+
+
+.debug .hero {
+    border: solid yellow 3px;
+    height: 400px;
+}
+
+.debug .section,
+.debug .footer {
+    border: solid red 3px;
+    /* padding: 10px; */
+}
+.debug [class^="col"] {
+    border: solid blueviolet;
+    height: 400px;
+}
+
+.debug .bigPic {
+    border: solid greenyellow;
+    height: 400px;
+}
+
+.debug .footer .col-6, 
+.debug .footer .col-3 {
+    border: solid black 3px;
+}
+
+.debug .colFooter {
+    padding: 30px;
+    border: solid violet 3px;
+    height: auto;
+}
+
+.debug .icons {
+    height: 30px;
 }
 
 /* style */
@@ -37,7 +69,6 @@ a {
 
 .row {
     display: flex;
-
 }
 
 [class^="nav"] {
@@ -54,9 +85,8 @@ a {
 
 /* main style */
 
-section {
-    border: solid red 3px;
-    padding: 10px;
+.section {
+    padding: 40px 0;
 }
 
 .container {
@@ -68,26 +98,27 @@ section {
 }
 
 
-
-
-.hero {
-    min-height: 200px;
+.hero {   
     width: 900px;
     margin: 0 auto;
-    border: solid yellow 3px;
 }
 
-[class^="col"] {
-    border: solid purple 3px;
+.heroContainer {
+    padding: 30px 0;
 }
+
+
 
 .col60 {
     flex-basis: 60%;
-    height: 300px;
 }
 
 .col40 {
     flex-basis: 40%;
+}
+
+.bkg {
+    background-color: rgb(231, 231, 231);
 }
 
 #reverse {
@@ -96,41 +127,35 @@ section {
 }
 
 .bigPic {
-    border: solid greenyellow;
+    /* border: solid greenyellow; */
     flex-basis: 100%;
 }
 
 /* footer style */
 
-
+.footer {
+    background-color: gray;
+}
 
  .footer .col-6 {
-    border: solid black 3px;
+    
     flex-basis: calc(100%  / 6);
-    align-content: stretch;
 }
 
 .footer .col-3 {
     flex-basis: calc(100% / 3);
-    border: solid black 3px;
+    
 }
 
-.footer-container {
-    max-width: 1200px;
-    margin: 0px auto;
-    border: solid blue 3px;
-    display: flex;
+.footerContainer {
+    padding: 5px 0 15px 0;
+}
+
+.footerIcons {
     justify-content: space-between;
 }
 
-.footer-container .col {
-    flex-basis: 20%;
-    padding: 20px 0px;
-}
-
-.footer .container::after {
-    content: "";
-    display: block;
-    height: 1px;
-    color: red;
+.containerIcons {
+    max-width: 1200px;
+    margin: 0 auto;
 }
