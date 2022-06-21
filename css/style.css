@@ -216,8 +216,39 @@ body {
 }
 
 .bigPic {
-    /* border: solid greenyellow; */
     flex-basis: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+}
+
+.bkgSectionTitle {
+    margin-bottom: 70px;
+    padding-top: 50px;
+    font-size: 36px;
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+}
+
+/* Last button before footer */
+
+.bigPic :last-child {
+    max-width: 350px;
+    align-self: center;
+    color: white;
+    background-color: #417aff;
+}
+
+.bigPic .button::before {
+    content: '\2193';
+    color: white;
+    margin-right: 5px;
+}
+
+
+
+.bigPic * {
+    text-align: center;
 }
 
 /* footer style */
