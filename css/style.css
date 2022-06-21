@@ -269,8 +269,16 @@ body {
 
 .footerContainer {
    margin: 0 auto;
-   padding: 50px 0px;
+   padding: 40px 0px 10px;
    color: white;
+}
+
+.footerContainer::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #417aff;
+    margin-top: 20px;
 }
 
 .footerMainTitle {
@@ -280,6 +288,8 @@ body {
 
 .language::after {
     content: '\02C5';
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .language {
@@ -289,6 +299,8 @@ body {
 
 #flag {
     height: 20px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .socials img {
@@ -302,11 +314,10 @@ body {
     color: #417aff;
 }
 
-.subtitleFooter li{
+.col-6 li{
     padding: 5px 0;
     color: white;
     font-size: 14px;
-    border: solid red 1px;
 }
 
 .footerIcons {
@@ -318,4 +329,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
+}
+
+.colFooter a {
+    background-color: #417aff;
+    color: white;
+    padding: 10px 40px;
 }
