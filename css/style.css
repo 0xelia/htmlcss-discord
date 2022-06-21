@@ -99,8 +99,7 @@ body {
 }
 
 .row {
-    display: flex;
-    align-items: center;
+    display: flex;s
 }
 
 
@@ -234,6 +233,7 @@ body {
 
 .bigPic :last-child {
     max-width: 350px;
+    padding: 20px 35px;
     align-self: center;
     color: white;
     background-color: #417aff;
@@ -254,7 +254,7 @@ body {
 /* footer style */
 
 .footer {
-    background-color: gray;
+    background-color: rgb(67, 67, 67);
 }
 
  .footer .col-6 {
@@ -268,10 +268,45 @@ body {
 }
 
 .footerContainer {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
+   margin: 0 auto;
+   padding: 50px 0px;
+   color: white;
+}
+
+.footerMainTitle {
+    color: #417aff;
+    font-size: 40px;
+}
+
+.language::after {
+    content: '\02C5';
+}
+
+.language {
+    
+    padding: 20px 0;
+}
+
+#flag {
+    height: 20px;
+}
+
+.socials img {
+    height: 20px;
+    padding-right: 10px;
+}
+
+.subtitleFooter {
+    font-size: 20px;
+    font-weight: 400;
+    color: #417aff;
+}
+
+.subtitleFooter li{
+    padding: 5px 0;
+    color: white;
+    font-size: 14px;
+    border: solid red 1px;
 }
 
 .footerIcons {
