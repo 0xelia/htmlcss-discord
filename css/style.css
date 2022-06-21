@@ -48,7 +48,7 @@ a {
 
 .debug [class^="col"] {
     border: solid blueviolet;
-    height: 400px;
+    /* height: 400px; */
 }
 
 .debug .bigPic {
@@ -152,7 +152,7 @@ body {
     margin-bottom: 40px;
 }
 
-.titleDescription {
+.heroDescription {
     text-align: center;
     font-size: ;
 }
@@ -184,13 +184,26 @@ body {
     padding-top: 70px;
 }
 
+/* sections */
 
 .col60 {
     flex-basis: 60%;
 }
 
+.sectionTitle {
+    font-size: 46px;
+    padding-bottom: 50px;
+}
+
+.sectionDescription {
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+}
+
 .col40 {
     flex-basis: 40%;
+    padding: 0 0 0 40px;
 }
 
 .bkg {
